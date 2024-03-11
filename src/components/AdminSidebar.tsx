@@ -1,11 +1,11 @@
-import React from "react";
+
 import { Link, useLocation, Location } from "react-router-dom";
 import { RiCoupon3Fill, RiDashboardFill, RiShoppingBag3Fill } from "react-icons/ri";
 import { IoIosPeople } from "react-icons/io";
 import { AiFillFileText } from "react-icons/ai";
 import { IconType } from "react-icons";
 import { FaChartBar, FaChartLine, FaChartPie, FaGamepad, FaStopwatch } from "react-icons/fa";
-import { FaCoins } from "react-icons/fa6";
+
 const AdminSidebar = () => {
   const location = useLocation();
   return (

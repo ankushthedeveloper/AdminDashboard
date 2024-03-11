@@ -164,7 +164,7 @@ export const PieChart = ({
   data,
   backgroundColor,
   offset,
-  cutout
+
 }: PieChartProps) => {
   const pieChartData: ChartData<"pie", number[], string> = {
     labels,
