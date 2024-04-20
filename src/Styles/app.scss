@@ -36,6 +36,22 @@
     background-color: rgb(211, 94, 94)
   }
 
+  .madeBy{
+    font-family: verdana;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    width: 100vw;
+    border-radius: 5px;
+    background: teal;
+    position: relative;
+    left: 20%;
+    bottom: 30%;
+    padding: 20px;
+    margin-bottom: 50%;
+  }
 
   .gotoBtn{
     font-family: monospace;
