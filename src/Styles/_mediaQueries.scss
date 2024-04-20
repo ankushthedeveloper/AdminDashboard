@@ -97,12 +97,29 @@
     }
   }
 }
+
+
 @media screen and (width<=1200px) {
+  svg{
+    font-size: 2rem;
+  }
+.searchIcon{
+  margin-left: 100px;
+  font-size :2rem;
+
+}
+.searchText{
+  font-size: 20px !important;
+  margin-left: 100px;
+}
+
   .adminContainer {
     overflow: auto;
   }
 
   .dashboard {
+    width: 100vw;
+
     .widgetContainer,
     .graphContainer,
     .transactionContainer {
@@ -115,6 +132,10 @@
           height: 10rem;
         }
       }
+      .TransactionBox{
+        margin-left: 20px;
+        padding-bottom: 50px;
+      }
 
       .dashboardCategories {
         max-width: none;
@@ -125,6 +146,12 @@
           }
           > div {
             margin-right: 200px;
+          }
+        }
+
+        .categoryItem{
+          h5{
+            margin-right: 20px;
           }
         }
       }
@@ -189,106 +216,111 @@
   }
 }
 
-@media screen and (width<=800px) {
-  .adminContainer {
-    overflow: auto;
-  }
+// @media screen and (width<=800px) {
+//   .adminContainer {
+//     overflow: auto;
+//   }
 
-  .dashboard {
-    //   .widgetContainer,
-    //   .graphContainer,
-    //   .transactionContainer {
-    //     justify-content: center;
-    //     flex-wrap: wrap;
+//   .dashboard {
+//       .widgetContainer,
+//       .graphContainer,
+//       .transactionContainer {
+//         justify-content: center;
+//         flex-wrap: wrap;
 
-    //     .widgetContainer {
-    //       .widget {
-    //         width: 20rem;
-    //         height: 10rem;
-    //       }
-    //     }
+//         .widgetContainer {
+//           .widget {
+//             width: 20rem;
+//             height: 10rem;
+//           }
+//         }
 
-    //     .dashboardCategories {
-    //       max-width: none;
-    //       width: 100vw;
-    //       .categoryItem {
-    //         > h5 {
-    //           margin-left: 250px;
-    //         }
-    //         > div {
-    //           margin-right: 200px;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-  }
-  .ProductManage {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    > section {
-      max-width: none;
-      padding: 2rem;
-      width: max-content;
-      right: 70px;
-      width: 1100px;
-      display: flex;
-      top:50px;
-      flex-direction: row;
-      > strong {
-        font-size: larger;
-      }
-      > span {
-        position: relative;
-        height: max-content;
-        top: 30%;
-        padding: 5px;
-        color: white;
-        font-size: x-large;
-        background-color: teal;
-        border-radius: 10px;
-      }
-      > p {
-        padding: 5px;
-        color: white;
-        background-color: teal;
-        border-radius: 10px;
-        height: max-content;
-        font-size: x-large;
-      }
-      > img {
-        @include square(50rem);
-        max-width: 600px;
-        max-height: max-content;
-      }
-      > h3 {
-        top: 100px;
-      }
-    }
-    > article {
-      max-height: none;
-      margin-top: 10px;
-      height: 100vh;
-      > form {
-        max-height: none;
-        height: 100vh;
-        > div {
-          @include flex(row);
-          height: 100%;
-          > label {
-            font-size: xx-large;
-          }
-        }
-        > button {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-}
+//         .dashboardCategories {
+//           max-width: none;
+//           width: 100vw;
+//           .categoryItem {
+//             > h5 {
+//               margin-left: 250px;
+//             }
+//             > div {
+//               margin-right: 200px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .ProductManage {
+//     display: flex;
+//     justify-content: space-evenly;
+//     flex-wrap: wrap;
+//     > section {
+//       max-width: none;
+//       padding: 2rem;
+//       width: max-content;
+//       right: 70px;
+//       width: 1100px;
+//       display: flex;
+//       top:50px;
+//       flex-direction: row;
+//       > strong {
+//         font-size: larger;
+//       }
+//       > span {
+//         position: relative;
+//         height: max-content;
+//         top: 30%;
+//         padding: 5px;
+//         color: white;
+//         font-size: x-large;
+//         background-color: teal;
+//         border-radius: 10px;
+//       }
+//       > p {
+//         padding: 5px;
+//         color: white;
+//         background-color: teal;
+//         border-radius: 10px;
+//         height: max-content;
+//         font-size: x-large;
+//       }
+//       > img {
+//         @include square(50rem);
+//         max-width: 600px;
+//         max-height: max-content;
+//       }
+//       > h3 {
+//         top: 100px;
+//       }
+//     }
+//     > article {
+//       max-height: none;
+//       margin-top: 10px;
+//       height: 100vh;
+//       > form {
+//         max-height: none;
+//         height: 100vh;
+//         > div {
+//           @include flex(row);
+//           height: 100%;
+//           > label {
+//             font-size: xx-large;
+//           }
+//         }
+//         > button {
+//           font-size: 1.5rem;
+//         }
+//       }
+//     }
+// }
 
 @media screen and (width<=600px) {
+
+  .searchText{
+    font-size: 17px !important;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
   .ProductManage {
     display: flex;
     flex-direction: column;
@@ -296,8 +328,8 @@
       max-height: none;
       height: 1500px;
       @include flex(column);
-      >span{
-        top:0px;
+      > span {
+        top: 0px;
         left: 0;
       }
     }
@@ -312,7 +344,7 @@
           @include flex(row);
           height: 100%;
           > label {
-            font-size:2rem;
+            font-size: 2rem;
           }
         }
         > button {

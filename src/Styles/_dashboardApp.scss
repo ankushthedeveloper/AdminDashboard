@@ -16,7 +16,7 @@
     // position: relative;
     max-width: 50vw;
     max-height: 50%;
-    background-color: rgba(127, 255, 212, 0.455);
+
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.216);
@@ -31,7 +31,7 @@
       @include flex(row, column, center, 1rem);
     }
 
-    .tossCoin {
+    .tossCoin{
       margin: 2rem;
       @include square(15rem);
       position: relative;

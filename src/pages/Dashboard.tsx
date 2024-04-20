@@ -15,8 +15,8 @@ const Dashboard = () => {
       <AdminSidebar />
       <main className="dashboard">
         <div className="bar">
-          <BsSearch />
-          <input type="text" placeholder="Search for Data, Users, docs .." />
+          <BsSearch  className="searchIcon"/>
+          <input type="text" className="searchText" placeholder="Search for Data, Users, docs .." />
           <FaRegBell />
           <img src={userimg} alt="" />
         </div>

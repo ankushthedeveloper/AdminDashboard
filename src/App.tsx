@@ -28,7 +28,7 @@ const App = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Link to='/admin/dashboard'>
-          <button style={{textAlign:"center", background:"grey" ,margin:"100px", padding:"2rem", borderRadius:"5px" }}>Go to Dashboard</button></Link>} />
+          <button className="gotoBtn">Go to Dashboard</button></Link>} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
           <Route path="/admin/products" element={<Products />} />
           <Route path="/admin/customers" element={<Customers />} />

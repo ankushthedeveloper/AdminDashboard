@@ -8,7 +8,7 @@ const BarCharts = () => {
       <AdminSidebar />
       <main className="chartContainer">
         <h1>Bar Charts</h1>
-        <hr />
+        
         <section>
           <BarChart
             data_1={[400, 660, 299, 789, 678, 777]}
@@ -20,10 +20,8 @@ const BarCharts = () => {
           />
           
           <h2>Top Selling Products and Top Customers</h2>
-          <hr />
+  
         </section>
- 
-        <hr />
         <section>
          <div className="orderChart">
          <BarChart
@@ -39,7 +37,7 @@ const BarCharts = () => {
          </div>
          
            <h2>Orders Throughout the Year</h2>
-           <hr />
+           
         </section>
        
       </main>
