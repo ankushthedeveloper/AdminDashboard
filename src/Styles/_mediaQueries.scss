@@ -328,11 +328,28 @@
 @media screen and (width<=500px) {
 
   .AdminContainer{
-    width: 100%;
+    width: 100vw;
     
     .chartContainer > section .orderChart {
       height: auto;
     }
+
+    .appContainer{
+   >h1{
+    font-size:3rem;
+   }
+      width:100vw !important;;
+      .btnStopwatch{
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+      }
+      
+      overflow-x:hidden;
+      > section {
+      
+     
+    }}
   }
 .heading{
   margin:40px 100px;
@@ -442,4 +459,6 @@
       }
     }
   }
+
+
 }
