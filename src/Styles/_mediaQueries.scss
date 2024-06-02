@@ -100,6 +100,7 @@
 
 
 @media screen and (width<=1200px) {
+  
   svg{
     font-size: 2rem;
   }
@@ -113,8 +114,18 @@
   margin-left: 100px;
 }
 
-  .adminContainer {
+  .AdminContainer {
     overflow: auto;
+    .chartContainer{
+      width: 100vw;
+    }
+
+    >aside{
+      overflow-y: scroll;
+      ::-webkit-scrollbar{
+        display: hidden;
+      }
+    }
   }
 
   .dashboard {
@@ -314,8 +325,55 @@
 //     }
 // }
 
-@media screen and (width<=600px) {
+@media screen and (width<=500px) {
+.heading{
+  margin:40px 100px;
+}
 
+
+  .dashboard .graphContainer .dashboardCategories .categoryItem {
+    display: unset;
+
+  }
+  .dashboard .transactionContainer .genderChart {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .dashboard .transactionContainer  {
+    .TransactionBox{
+      >h2{
+        position: sticky;
+        color: teal;
+         font-size: 16px;
+         font-weight: 700;
+      }
+    }
+    
+  }
+ 
+  .dashboard .graphContainer .revenueChart {
+    // width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    ::-webkit-scrollbar{
+      display: hidden;
+    }
+
+    canvas{
+      
+      width: 100%;
+    }
+  }
+
+  .gotoBtn{
+    width: 200px;
+    font-size: xx-large !important;
+  }
+.madeBy{
+  width: 200px !important;
+  font-size: medium !important;
+}
   .searchText{
     font-size: 17px !important;
     margin-left: 0px;
