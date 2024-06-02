@@ -326,6 +326,14 @@
 // }
 
 @media screen and (width<=500px) {
+
+  .AdminContainer{
+    width: 100%;
+    overflow-x: hidden;
+    .chartContainer > section .orderChart {
+      height: auto;
+    }
+  }
 .heading{
   margin:40px 100px;
 }
@@ -371,7 +379,7 @@
     font-size: xx-large !important;
   }
 .madeBy{
-  width: 200px !important;
+  width: 100px !important;
   font-size: medium !important;
 }
   .searchText{
@@ -380,6 +388,12 @@
     margin-top: 5px;
   }
   .ProductManage {
+
+    width:100vw !important;
+    position: relative;
+   ;
+    left:10px !important;
+    margin-right: 10px !important;
     display: flex;
     flex-direction: column;
     > section {
@@ -393,10 +407,14 @@
     }
     > article {
       max-height: none;
-      //     top: 30% ;
-      height: 1600px;
+      right:80%;
+      height: 100vh !important;
+      width: 90vw !important;
       > form {
         max-height: none;
+        label{
+          font-size: large !important;
+        }
         height: 100vh;
         > div {
           @include flex(row);
@@ -408,6 +426,19 @@
         > button {
           font-size: 2rem;
         }
+      }
+    }
+    >section{
+      right:80%;
+      margin-top: 100px;
+      height: 100vh !important;
+      width: 90vw !important;
+      .orderChart{
+        height: 10%;
+      }
+      > img{
+        width: 70vw;
+
       }
     }
   }
