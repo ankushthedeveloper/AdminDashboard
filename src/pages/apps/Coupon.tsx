@@ -62,6 +62,7 @@ const Coupon = () => {
               }}
             />
             <input type="number" 
+             placeholder="Size"
             max={25}
             min={8}
             onChange={(e)=>setSize(Number(e.target.value))}/>

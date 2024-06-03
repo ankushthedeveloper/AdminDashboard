@@ -7,6 +7,9 @@ const LineCharts = () => {
     <AdminSidebar />
     <main className="chartContainer">
         <h1>Line Charts</h1>
+        <div className="mobile">
+          Turn to horizontal for better View
+        </div>
         <hr />
         <section>
           <LineChart

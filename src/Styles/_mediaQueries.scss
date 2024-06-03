@@ -1,6 +1,13 @@
 @media screen and (width<=1400px) {
+  .mobile{
+    display: none;
+  }
   .adminContainer {
     overflow: auto;
+
+    .appContainer{
+      width: 100vw !important;
+    }
   }
 
   .dashboard {
@@ -100,7 +107,10 @@
 
 
 @media screen and (width<=1200px) {
-  
+  .mobile{
+    display: none;
+  }
+
   svg{
     font-size: 2rem;
   }
@@ -115,6 +125,10 @@
 }
 
   .AdminContainer {
+
+    .appContainer{
+      width: 100vw !important;
+    }
     overflow: auto;
     .chartContainer{
       width: 100vw;
@@ -123,7 +137,7 @@
     >aside{
       overflow-y: scroll;
       ::-webkit-scrollbar{
-        display: hidden;
+         display: none;
       }
     }
   }
@@ -227,112 +241,33 @@
   }
 }
 
-// @media screen and (width<=800px) {
-//   .adminContainer {
-//     overflow: auto;
-//   }
 
-//   .dashboard {
-//       .widgetContainer,
-//       .graphContainer,
-//       .transactionContainer {
-//         justify-content: center;
-//         flex-wrap: wrap;
-
-//         .widgetContainer {
-//           .widget {
-//             width: 20rem;
-//             height: 10rem;
-//           }
-//         }
-
-//         .dashboardCategories {
-//           max-width: none;
-//           width: 100vw;
-//           .categoryItem {
-//             > h5 {
-//               margin-left: 250px;
-//             }
-//             > div {
-//               margin-right: 200px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .ProductManage {
-//     display: flex;
-//     justify-content: space-evenly;
-//     flex-wrap: wrap;
-//     > section {
-//       max-width: none;
-//       padding: 2rem;
-//       width: max-content;
-//       right: 70px;
-//       width: 1100px;
-//       display: flex;
-//       top:50px;
-//       flex-direction: row;
-//       > strong {
-//         font-size: larger;
-//       }
-//       > span {
-//         position: relative;
-//         height: max-content;
-//         top: 30%;
-//         padding: 5px;
-//         color: white;
-//         font-size: x-large;
-//         background-color: teal;
-//         border-radius: 10px;
-//       }
-//       > p {
-//         padding: 5px;
-//         color: white;
-//         background-color: teal;
-//         border-radius: 10px;
-//         height: max-content;
-//         font-size: x-large;
-//       }
-//       > img {
-//         @include square(50rem);
-//         max-width: 600px;
-//         max-height: max-content;
-//       }
-//       > h3 {
-//         top: 100px;
-//       }
-//     }
-//     > article {
-//       max-height: none;
-//       margin-top: 10px;
-//       height: 100vh;
-//       > form {
-//         max-height: none;
-//         height: 100vh;
-//         > div {
-//           @include flex(row);
-//           height: 100%;
-//           > label {
-//             font-size: xx-large;
-//           }
-//         }
-//         > button {
-//           font-size: 1.5rem;
-//         }
-//       }
-//     }
-// }
 
 @media screen and (width<=500px) {
 
+
+  .mobile{
+  display: block;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: 700;
+  color: #414141;
+  background-color: aquamarine;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 100px;
+  }
   .AdminContainer{
     width: 100vw;
+    >aside{
+      overflow-y: scroll !important;
+    }
     
     .chartContainer > section .orderChart {
       height: auto;
     }
+
+
 
     .appContainer{
    >h1{
@@ -347,7 +282,27 @@
       
       overflow-x:hidden;
       > section {
-      
+
+        .couponForm > input {
+           width: 200%;
+           height: 40px;
+           font-size: 12px;
+           font-weight: 330;
+           position: relative;
+           right: 3rem;
+ 
+        }
+
+        .couponForm >fieldset {
+          width: 200%;
+          position: relative;
+           right: 7rem;
+        } 
+        .couponForm button{
+         
+          position: relative;
+           right: 3rem;
+        }
      
     }}
   }
@@ -462,3 +417,7 @@
 
 
 }
+
+
+
+

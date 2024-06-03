@@ -8,6 +8,9 @@ const BarCharts = () => {
       <AdminSidebar />
       <main className="chartContainer">
         <h1>Bar Charts</h1>
+        <div className="mobile">
+          Turn to horizontal for better View
+        </div>
         
         <section>
           <BarChart
