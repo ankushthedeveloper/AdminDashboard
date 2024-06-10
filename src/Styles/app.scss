@@ -52,6 +52,9 @@
     bottom: 30%;
     padding: 20px;
     margin-top: 2px;
+    &:hover{
+      opacity: 1 !important;
+    }
   }
 
   .gotoBtn{

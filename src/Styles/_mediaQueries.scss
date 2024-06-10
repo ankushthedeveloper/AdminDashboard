@@ -351,8 +351,12 @@
     font-size: xx-large !important;
   }
 .madeBy{
-  width: 100px !important;
+  width: 200px !important;
   font-size: medium !important;
+  left:20% !important;
+  &:hover{
+    opacity: 1 !important;
+  }
 }
   .searchText{
     font-size: 17px !important;

@@ -29,8 +29,9 @@ const App = () => {
           <Route path="/" element={<Link to='/admin/dashboard'>
           <button className="gotoBtn">Go to Dashboard</button> 
           <h5 className="madeBy">
-            Created By Ankush👦
-
+           This Website is created by Ankush,
+           Student of Panjab University Chandigarh,
+           Contact for Collaborations
           </h5>
           </Link>} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
